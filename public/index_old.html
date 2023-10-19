@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zcosystem</title>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.5"
+      integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org/dist/ext/preload.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css" />
+    <script
+      src="https://kit.fontawesome.com/126b20aed4.js"
+      crossorigin="anonymous"></script>
+    <script>
+      {
+        `htmx.config.globalViewTransitions = true;`;
+      }
+    </script>
+    <style>
+      {`
+      [data-loading] {
+        display: none;
+      }
+      [un-cloak] {
+        display: none;
+      }
+      `}
+    </style>
+  </head>
+  <body
+    class="flex h-screen flex-col items-center gap-4 bg-cover bg-center bg-no-repeat text-white"
+    style="background-image: url(&quot;images/background-farm.png&quot;)">
+    <nav class="w-screen py-2 text-center font-extrabold">
+      <a href="/" class="text-xl">Zcosystem</a>
+    </nav>
+    <main class="flex h-full w-screen flex-col items-center px-10">
+      <section
+        name="hero"
+        class="flex h-full w-full flex-col items-center justify-center">
+        <div class="m-20 flex w-full text-slate-900 sm:justify-between">
+          <div
+            class="flex flex-col items-center justify-center sm:flex sm:w-1/2">
+            <i class="fa-solid fa-seedling text-50 text-green-300"></i>
+          </div>
+          <div
+            class="flex h-full flex-col justify-center gap-4 self-end px-2 text-left sm:w-1/2">
+            <h1 class="text-5xl font-bold leading-normal">
+              Where <span class="text-green-300">Sustainability</span> Meets
+              <span class="text-green-300">Style</span>.
+            </h1>
+            <h2 class="text-2xl leading-10">
+              At Zcosystem, our mission is to lead with innovative design
+              thinking and strategic planning, driving a global movement towards
+              sustainable elegance that nurtures our planet and empowers our
+              clients.
+            </h2>
+            <form
+              action=""
+              class="hidden w-full justify-between rounded-full bg-white shadow-lg shadow-slate-50 xl:shadow-sm">
+              <input
+                type="email"
+                placeholder="Contact us"
+                class="w-full rounded-full px-4 text-black placeholder-slate-500 outline-none"
+                required />
+              <button class="bg-green rounded-full px-10 py-4 font-semibold">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="flex flex-col w-90 p-2 items-center justify-center rounded-lg bg-neutral-50">
+          <h3 class="text-xl font-semibold text-slate-900">Current Clients</h3>
+          <hr class="w-4 mb-4 mt-1 border-green-300 bg-green-300" />
+          <div name="clients" class="flex w-full justify-center gap-10 pb-4">
+            <a href="https://www.farmerjawn.co/" target="_blank"
+              ><img src="images/farmerjawn.png" alt="Farmer Jawn" class="h-15"
+            /></a>
+            <a href="https://www.sharingexcess.com" target="_blank"
+              ><img
+                src="images/sharing-excess.png"
+                alt="Sharing Excess"
+                class="h-15"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="p-2 text-xl mix-blend-overlay">
+      <a href="http://" target="_blank" rel="noopener noreferrer"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+    </footer>
+  </body>
+</html>
